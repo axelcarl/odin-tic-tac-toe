@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+:root {
+  font-family: 'Abel', sans-serif;
+}
+
+.body {
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vh;
+  height: 100vh;
+}
+
+.start {
+  font-size: 20px;
+  background-color: rgb(211, 208, 208);
+  border: 1px solid rgb(211, 208, 208);
+  box-shadow: 3px 3px 3px 0px rgb(128, 127, 127);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: 'Abel', sans-serif;
+}
+
+.game-board {
+  height: 50%;
+  width: 50%;
+  background-color: rgb(211, 208, 208);
+  box-shadow: 3px 3px 3px 0px rgb(128, 127, 127);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 33.3333333%);
+  border-radius: 5px;
+}
+
+.tile {
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid rgb(185, 185, 185);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.icon1, .icon2 {
+  display: none;
+  height: 80%;
+  width: 80%;
+  fill: rgb(107, 106, 106);
+}
+
+.icon2 {
+  height: 60%;
+  width: 60%;
+}
+
+.winner {
+  font-size: 50px;
+}
